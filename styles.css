@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff6f61, #ffcccb);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .gif-container img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .gif-container img:hover {
+    transform: scale(1.1);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #yes-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  #no-button {
+    background-color: #F44336;
+    color: white;
+  }
+
+  /* Hover animations */
+  #yes-button:hover {
+    transform: scale(1.1);
+    background-color: #45a049;
+  }
+  
+  #no-button:hover {
+    transform: scale(1.1);
+    background-color: #e53935;
+  }
+  
+  /* Click animations */
+  #yes-button:active {
+    transform: scale(0.9);
+  }
+  
+  #no-button:active {
+    transform: scale(0.9);
+  }
